@@ -11,15 +11,27 @@
 
 .banner-img {
   width: 100%;
-  height: 55vh;
+  height: 65vh;
 }
 
 .img-text {
+  margin: 0;
   position: absolute;
-  width: 100%;
+  width: 90vw;
   bottom: 1rem;
   color: white;
   padding: 10px;
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   line-height: 14px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 1rem;
+}
+
+.movie-card {
+  margin-bottom: 1rem;
 }

@@ -4,6 +4,7 @@ import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
+import { Button } from "@mui/material";
 
 export default function MoviesCard({ val }) {
   return (
@@ -17,14 +18,23 @@ export default function MoviesCard({ val }) {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {val.title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          <Typography
+            sx={{ height: "165px", overflow: "hidden" }}
+            variant="body2"
+            color="text.secondary"
+          >
+            {val.overview}
           </Typography>
         </CardContent>
       </CardActionArea>
+      <Button
+        sx={{ marginLeft: "10px", marginBottom: "10px" }}
+        variant="contained"
+      >
+        Add to Favourites
+      </Button>
     </Card>
   );
 }

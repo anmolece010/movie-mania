@@ -12,7 +12,7 @@ export default function Banner() {
         "https://api.themoviedb.org/3/movie/popular?api_key=20b7dac373c2e985d153e16ebbc26ff8&language=en-US&page=1"
       );
       const bannerData = await response.json();
-      setData(bannerData.results[6]);
+      setData(bannerData.results[15]);
       console.log(bannerData);
       setTimeout(() => {
         setLoader(false);
